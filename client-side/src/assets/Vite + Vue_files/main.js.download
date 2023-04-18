@@ -1,0 +1,12 @@
+import { createApp } from "/node_modules/.vite/deps/vue.js?v=361a0ecf";
+import { createPinia } from "/node_modules/.vite/deps/pinia.js?v=c13f17eb";
+import router from "/src/router/index.js";
+import "/src/style.css?t=1679134722499";
+import App from "/src/App.vue?t=1679134722499";
+
+const pinia = createPinia();
+const app = createApp(App);
+
+app.use(pinia);
+app.use(router);
+app.mount("#app");
